@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a =[23,45,67,88,90];
+        let b = a.map(mymap)
+        function mymap(e,f){
+            let c = e*10
+            return c;
+        }
+        console.log(b);
+
+
+        let  fil = a.filter(myFil);
+
+        function myFil(e,f){
+            return e >=46;
+        }
+        console.log(fil)
+
+
+        let redu =a.reduce(myreduce);
+        function myreduce(add,a,b){
+        let d = add+a;
+        return d;
+        }
+        console.log(redu)
+
+        let 
+    </script>
+</body>
+</html>

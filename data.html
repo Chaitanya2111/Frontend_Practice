@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Submitted Data</h2>
+
+    <script>
+     
+        var formDataJSON = localStorage.getItem("formData");
+        if (formDataJSON) {
+            
+            var formData = JSON.parse(formDataJSON);
+
+          
+            document.write("<p>Name: " + formData.name + "</p>");
+            document.write("<p>Email: " + formData.email + "</p>");
+        } else {
+         
+            document.write("<p>No data submitted.</p>");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Slip</title>
+    <style>
+        body {
+            font-family:Arial, sans-serif;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .header {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .subheader {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table th,
+        .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .total-row {
+            font-weight: bold;
+        }
+
+        .net-pay {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .bank-details {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            exceltemplate.NET
+        </div>
+        <div class="subheader">
+            SALARY SLIP
+            <span style="float: right; font-size: 10px;">CONFIDENTIAL</span>
+        </div>
+        <div>
+            <p><b>January 2023</b></p>
+        </div>
+        <div>
+            <p><b>Name</b>                                     <b>Title</b>                                                              = Cleaning Service Staff</p>
+            <p>: Wayne Doorprize</p>
+        </div>
+        <div>
+            <p><b>Employee ID</b>                                 <b>Directorate</b>                                                    = Operation</p>
+            <p>                                                    <b>Department</b>                                                    : General Affairs</p>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Earnings</th>
+                    <th>Deductions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basic Salary</td>
+                    <td>$2,000.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Meal Allowance</td>
+                    <td>$300.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Transportation Allowance</td>
+                    <td>$300.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Medical Allowance</td>
+                    <td>$300.00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Retirement Insurance</td>
+                    <td>-</td>
+                    <td>$25.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>-</td>
+                    <td>$25.00</td>
+                </tr>
+                <tr class="total-row">
+                    <td><b>Total</b></td>
+                    <td><b>$2,900.00</b></td>
+                    <td><b>$50.00</b></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="net-pay">
+            NET PAY: $2,850.00
+        </div>
+        <div class="bank-details">
+            Bank Name: Bank of America<br>
+            Bank Account Name: Wayne Doorprize<br>
+            Bank Account #: 1234567890
+        </div>
+    </div>
+</body>
+</html>

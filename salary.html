@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salary Slip</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .salary-slip {
+        width: 8.5in; /* Adjust as needed */
+        margin: 20px auto;
+        border: 2px solid black;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .heading-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .heading {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .right-align {
+        text-align: right;
+      }
+
+      .subheading {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      .table th,
+      .table td {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: left;
+      }
+
+      .table th {
+        font-weight: bold;
+      }
+
+      .total-row {
+        font-weight: bold;
+      }
+
+      .net-pay {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: right;
+      }
+
+      .bank-details {
+        margin-top: 20px;
+      }
+
+      .bank-details span {
+        font-weight: bold;
+      }
+
+      .info {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+      }
+
+      .left-info{
+        margin-left: 20px;
+      }
+      .left-info,
+      .right-info {
+        width: 50%;
+      }
+
+      .right-info {
+        text-align: right;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="salary-slip">
+      <div class="heading-container">
+        <div class="heading">exceltemplate.NET</div>
+        <div class="heading">SALARY SLIP</div>
+        <div class="heading right-align">CONFIDENTIAL</div>
+      </div>
+
+      <div style="margin-left: 350px">January 2018</div>
+      <hr />
+      <div class="info">
+        <div class="left-info">
+          <div>Name : Wayne Doorprize</div>
+          <div>Employee ID : Operation</div>
+        </div>
+        <div class="right-info">
+          <div>Title : Cleaning Service Staff</div>
+          <div>Directorate : General Affairs</div>
+        </div>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Earnings</th>
+            <th>Deductions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic Salary</td>
+            <td>2,000.00</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Meal Allowance</td>
+            <td>300.00</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Transportation Allowance</td>
+            <td>300.00</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Medical Allowance</td>
+            <td>300.00</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Retirement Insurance</td>
+            <td>-</td>
+            <td>25.00</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>-</td>
+            <td>25.00</td>
+          </tr>
+          <tr class="total-row">
+            <td>Total</td>
+            <td>2,900.00</td>
+            <td>50.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="net-pay">NET PAY: 2,850.00</div>
+
+      <div class="bank-details">
+        <span>Bank Name:</span> Bank of America<br />
+        <span>Bank Account Name:</span> Wayne Doorprize<br />
+        <span>Bank Account #:</span> 1234567890
+      </div>
+
+      <div class="payment-date">Payment Date: January 28, 2017</div>
+    </div>
+  </body>
+</html>

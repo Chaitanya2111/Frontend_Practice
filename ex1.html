@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       function findValueInArray(arr, value) {
+    var l = arr.length;
+    for (var i = 0; i <= l; i++) {
+      var s = arr.includes(value);
+      var p = arr.indexOf(value);
+      if (s == true) {
+        return `Positon Of entered value in array is ${p}`;
+      
+      } else return `Positon Of entered value in array is -1`;
+    }
+  }
+  
+  console.log(findValueInArray([1, 2, 3, 4, 5], 4));
+  console.log(findValueInArray([1,2,3,4,5], 7));
+
+    </script>
+</body>
+
+</html>

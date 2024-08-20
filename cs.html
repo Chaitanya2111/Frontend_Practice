@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeNumber</title>
+</head>
+<body>
+    <h1>Hello chaitanya</h1>
+    <script>
+        function checkprimeNumber(n){
+
+            var isPrime = true;
+            for (var i = 0; i <= n; i++){
+                if(i != 1 && i != n){
+                    if (n % i == 0){
+                        isPrime = false;
+                    }
+                }
+            }
+            return isPrime;
+        }
+        console.log(checkprimeNumber(31));
+
+
+        function allprimeNumbers(n){
+            var primeArray = [];
+
+            for ( var i = 0; i <= n; i++){
+                if (checkprimeNumber(i)){
+                    primeArray.push(i);
+                }
+            }
+            return primeArray;
+        }
+        console.log(allprimeNumbers(1000));
+    </script>
+</body>
+</html>

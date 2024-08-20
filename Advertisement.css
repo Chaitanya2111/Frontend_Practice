@@ -1,0 +1,40 @@
+input{
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 40px;
+  line-height: 1cm;
+}
+input:hover{
+border: 3px solid rgb(87, 87, 212);
+} 
+
+textarea:hover{
+    border: 3px solid rgb(106, 106, 232);
+
+}
+select:optional{
+    font-size: 30px;
+    border-radius: 12px;
+}
+select:hover{
+    border-color: rgb(58, 51, 237);
+}
+select{
+    padding: 10px;
+    margin-left: 20%;
+    border: 3px solid rgb(7, 7, 10);
+    color: rgb(11, 11, 10);
+    
+}
+div{
+background-color: rgba(82, 200, 200, 0.964);
+
+}
+textarea{
+font-size: 20px;
+border: 2px solid black;
+border-radius: 12px  ;
+}
+label{
+    font-size: 35px;
+}

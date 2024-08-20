@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <script>
+        // Example No 1
+
+        var promise = Promise.resolve(3);
+
+        promise.then(function(val){
+            console.log(val);
+        })
+
+        //  Example No 2
+
+        function resolved(result) {
+  console.log('Resolved');
+}
+
+function rejected(result) {
+  console.error(result);
+}
+
+Promise.reject(new Error('Boo!')).then(resolved, rejected);
+
+
+// Example No 3
+
+var promise = new Promise(function(resolve, reject) { 
+  const x = "Boo!"; 
+  const y = "boo!"
+  if(x === y) { 
+    resolve(); 
+  } else { 
+    reject(); 
+  } }); 
+promise.then(function(){ 
+console.log(' it Should Resolve is truthy');}).catch(function () { 
+console.log(' it Should Resolve is falsy');}); 
+
+
+
+
+// Example No 4
+
+
+const promises = new Promise((resolve,reject) =>{
+  setTimeout(() =>{
+    let Value = 20;
+    resolve(Value);
+  },3000);
+});
+
+promises.then((value) =>{
+  console.log(value);
+})
+
+    </script>
+</body>
+</html>
